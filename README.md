@@ -1,7 +1,6 @@
 # Reemplazar-propiedades-de-un-array-de-objeto-en-javascript
 
 ``` javascript
-
 const replaceKeys = (items, keysToReplace) => {
     return items?.map(item => {
         const map = new Map(Object.entries(item));
@@ -33,4 +32,5 @@ const keysToReplace = {
     cardName: "nombre",
 }
 
+console.log(replaceKeys(cars, keysToReplace))
 ```
