@@ -1,4 +1,4 @@
-# Reemplazar-propiedades-de-un-array-de-objeto-en-javascript
+# Reemplazar propiedades de un array de objeto en javascript
 
 ``` javascript
 const replaceKeys = (items, keysToReplace) => {
