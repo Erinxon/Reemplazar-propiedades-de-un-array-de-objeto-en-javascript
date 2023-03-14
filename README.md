@@ -2,15 +2,15 @@
 
 ``` javascript
 const replaceKeys = (items, keysToReplace) => {
-    return items?.map(item => {
-        const map = new Map(Object.entries(item));
-        map?.forEach((value, key) => {
+  return items.map(item => {
+       const map = new Map(Object.entries(item));
+        const modifiedItem  = {}
+        map.forEach((value, key) => {
             if (keysToReplace[key]) {
-                map.set(keysToReplace[key], value);
-                map.delete(key);
+                modifiedItem[keysToReplace[key]] = value;
             }
         });
-        return Object.fromEntries(map);
+        return modifiedItem 
     });
 }
 
